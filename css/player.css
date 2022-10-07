@@ -1,0 +1,33 @@
+#gameContainer > #surface > player,
+#gameContainer > #surface > enemy{
+    width: 36px;
+    height: 38px;
+    background-position: bottom;
+    position: absolute;
+    left: 19rem;
+    bottom: 0px;
+    z-index: 20;
+    /* transition: left .01s linear, bottom .01s linear; */
+    /* background-color: rgba(255, 255, 255, .3); */
+}
+
+
+/* Personajes */
+#gameContainer > #surface > .cyborg{
+    background-image: url(../assets/3\ Cyborg/cbg_idle/1.png);
+    animation: cyborgIdle 1.3s infinite;
+}
+
+#gameContainer > #surface > .biker{
+    background-image: url(../assets/1\ Biker/bkr_idle/1.png);
+    animation: bikerIdle 1.3s infinite;
+}
+
+
+/* Cuando mueren los personajes */
+#gameContainer > #surface > .cyborg.death{
+    background-image: url(../assets/3\ Cyborg/cbg_death/6.png);
+}
+#gameContainer > #surface > .biker.death{
+    background-image: url(../assets/1\ Biker/bkr_death/6.png);
+}

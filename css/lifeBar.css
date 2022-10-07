@@ -1,0 +1,86 @@
+/* La barra de vida */
+:root{
+    --bar: white;
+}
+
+.lifesBar{
+    margin-bottom: .5rem;
+    width: 100%;
+    height: .7rem;
+    background-color: crimson;
+    padding: .2rem;
+    box-shadow: inset 0 0 7px 2px rgba(0, 0, 0, .85);
+    border-radius: 7px;
+    position: absolute;
+    left: 0;
+    top: -1rem;
+}.lifesBar.hurt{
+    animation: lifesBarHurt .4s 2;    
+}
+  
+.lifesBar > .bar{
+    background-color: var(--bar);
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    transition: all .5s linear;
+}
+
+
+/* La barra de vida para el jugador principal */
+player .lifesBar{
+    background-color: deepskyblue;
+}
+
+/* Animación de daño */
+@keyframes lifesBarHurt{
+    0%{
+        left: -.02rem;
+        top: -1.009rem;
+        --bar: black;
+    }
+
+    14.5%{
+        left: -.04rem;
+        top: -1.008rem;
+    }
+
+    27%{
+        left: -.06rem;
+        top: -1.007rem;
+    }
+
+    39.5%{
+        left: 0;
+        top: -1rem;
+    }
+
+    52%{
+        left: .02rem;
+        top: -.909rem;
+    }
+
+    64.5%{
+        left: .04rem;
+        top: -.908rem;
+    }    
+
+    77%{
+        left: .06rem;
+        top: -.907rem;
+    }
+
+    100%{
+        left: 0;
+        top: -1rem;
+    }
+}
+
+@keyframes aaa{
+    0%{
+
+    }100%{
+
+    }
+}
+
