@@ -1,0 +1,97 @@
+/* Obstacles animations */
+@keyframes obstacle1{
+    0%{
+        background-image: url(../assets/obstacles/obstacle1/1.png);
+    }
+
+    10%{
+        background-image: url(../assets/obstacles/obstacle1/2.png);
+    }
+
+    20%{
+        background-image: url(../assets/obstacles/obstacle1/3.png);
+    }
+
+    30%{
+        background-image: url(../assets/obstacles/obstacle1/4.png);
+    }
+
+    40%{
+        background-image: url(../assets/obstacles/obstacle1/5.png);
+    }
+
+    50%{
+        background-image: url(../assets/obstacles/obstacle1/6.png);
+    }
+
+    60%{
+        background-image: url(../assets/obstacles/obstacle1/7.png);
+    }
+
+    70%{
+        background-image: url(../assets/obstacles/obstacle1/8.png);
+    }
+
+    80%{
+        background-image: url(../assets/obstacles/obstacle1/9.png);
+    }
+
+    90%{
+        background-image: url(../assets/obstacles/obstacle1/10.png);
+    }
+
+    100%{
+        background-image: url(../assets/obstacles/obstacle1/1.png);
+    }
+}
+
+
+
+@keyframes obstacle1Explosion{
+    0%{
+        background-image: url(../assets/obstacles/obstacle1explosion/1.png);
+    }
+
+    10%{
+        background-image: url(../assets/obstacles/obstacle1explosion/2.png);
+    }
+
+    20%{
+        background-image: url(../assets/obstacles/obstacle1explosion/3.png);
+    }
+
+    30%{
+        background-image: url(../assets/obstacles/obstacle1explosion/4.png);
+    }
+
+    40%{
+        background-image: url(../assets/obstacles/obstacle1explosion/5.png);
+    }
+
+    50%{
+        background-image: url(../assets/obstacles/obstacle1explosion/5.png);
+    }
+
+    60%{
+        background-image: url(../assets/obstacles/obstacle1explosion/6.png);
+    }
+
+    70%{
+        background-image: url(../assets/obstacles/obstacle1explosion/7.png);
+    }
+
+    80%{
+        background-image: url(../assets/obstacles/obstacle1explosion/8.png);
+    }
+
+    90%{
+        background-image: url(../assets/obstacles/obstacle1explosion/9.png);
+    }
+
+    100%{
+        background-image: url(../assets/obstacles/obstacle1explosion/9.png);
+    }
+}
+
+
+

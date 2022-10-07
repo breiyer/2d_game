@@ -1,0 +1,21 @@
+@keyframes obstacle2Hurt{
+    0%{
+        background-image: url(../assets/obstacles/obstacle2hurt/1.png);
+    }
+
+    25%{
+        background-image: url(../assets/obstacles/obstacle2hurt/2.png);
+    }    
+
+    50%{
+        background-image: url(../assets/obstacles/obstacle2hurt/3.png);
+    } 
+    
+    75%{
+        background-image: url(../assets/obstacles/obstacle2hurt/4.png);
+    } 
+    
+    100%{
+        background-image: url(../assets/obstacles/obstacle2hurt/1.png);
+    }     
+}
