@@ -1,0 +1,48 @@
+/* Obstáculos */
+#gameContainer > #surface > obstacle,
+#gameContainer > #surface > vortex{
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: left .1s linear, bottom .1s linear;
+    z-index: 10;
+}
+
+
+#gameContainer > #surface > obstacle.obstacle1{
+    animation: obstacle1 2s infinite;
+    width: 50px;
+    height: 43px;
+}
+
+
+#gameContainer > #surface > obstacle.obstacle2{
+    width: 30px;
+    height: 30px;
+}
+
+
+#gameContainer > #surface > vortex.obstacle3{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    animation: vortexRotate 5s infinite linear backwards;
+    box-shadow: 0 0 12px 3px purple;
+}
+
+@keyframes vortexRotate{
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+    
+    50%{
+        transform: rotate(180deg) scale(.7);
+    }
+    
+    100%{
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+

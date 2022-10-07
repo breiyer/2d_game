@@ -1,0 +1,29 @@
+/* Balas */
+#gameContainer > #surface > bullet{
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    transition: left .1s linear;
+    z-index: 30;
+}
+
+#gameContainer > #surface > .bullet1{
+    height: 30px;
+    width: 55px;
+}
+
+#gameContainer > #surface > .bullet2{
+    height: 60px;
+    width: 60px;
+}
+
+#gameContainer > #surface > .bullet3{
+    height: 60px;
+    width: 60px;
+}
+
+#gameContainer > #surface > .bullet4{
+    height: 40px;
+    width: 40px;
+}

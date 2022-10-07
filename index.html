@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Game Alpha v1.2</title>
+
+    <link rel="stylesheet" type="text/css" href="css/game.css">
+    <link rel="stylesheet" type="text/css" href="css/loading_screen.css">
+    <link rel="stylesheet" type="text/css" href="css/lifeBar.css">
+    <link rel="stylesheet" type="text/css" href="css/gui.css">
+    <link rel="stylesheet" type="text/css" href="css/obstacle.css">
+    <link rel="stylesheet" type="text/css" href="css/ammo.css">
+    <link rel="stylesheet" type="text/css" href="css/player.css">
+    <link rel="stylesheet" type="text/css" href="css/kf_bullets.css">
+    <link rel="stylesheet" type="text/css" href="css/kf_obstacles.css">
+    <link rel="stylesheet" type="text/css" href="css/kf_player.css">
+
+    <script defer src="js/game.js"></script>
+    <script src="js/mobileDevice.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/touchControl.js"></script>
+    <script src="js/lifeBar.js"></script>
+    <script src="js/tools.js"></script>
+    <script src="js/obstacle.js"></script>
+    <script src="js/vortex.js"></script>
+    <script src="js/ammo.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/playerBot.js"></script>
+    <script src="js/playerMain.js"></script>
+    <script src="js/animations.js"></script>
+    <script defer src="js/buildGame.js"></script>
+</head>
+<body>
+<div id="container">
+
+
+    <!-- ventana de carga -->   
+    <div id="loadingScreenContainer">
+        <h1 id="msj">Cargando...</h1>
+
+        <div id="animationContainer">
+            <div id="loadingBar">
+                <div id="bar"></div>
+                <span id="percentage">3%</span>
+            </div>
+        </div>
+
+        <button id="playButton" 
+            onclick="buildGame();">
+        </button>
+    </div>
+
+
+
+    <div id="gameInfo">
+        <h1 id="level">Level: 1</h1>
+
+        <h2 id="time">
+            <img src="assets/icons/clock.png" alt="Reloj" width="20px">  
+            <span id="time">0:00</span> 
+        </h2>
+
+
+        <button id="musicButton" 
+            onclick="toggleMusic();">
+        </button>        
+
+         
+        <button id="screenButton" 
+            onclick="fullScreen();">
+            Pantalla completa
+        </button>           
+    </div>
+
+    
+    <div class="buttonContainer" id="left">
+
+        <div id="playerWeapons" onclick="TouchControl.changeAmmo();">
+            <div id="icon"></div>
+
+            <div id="cooldownBar">
+                <div id="bar"></div>
+                <div id="name"></div>
+            </div>
+        </div>    
+
+        <button id="shoot" 
+            ontouchstart="TouchControl.btnDown('Space', 'Space');"
+            ontouchend="TouchControl.btnUp('Space', 'Space');">
+        </button>
+
+        <button id="left" 
+            ontouchstart="TouchControl.btnDown('ArrowLeft', 'ArrowLeft');"
+            ontouchend="TouchControl.btnUp('ArrowLeft', 'ArrowLeft');">
+        </button>
+    </div>
+
+    <div id="gameContainer">
+        <div id="surface"></div>
+        <div id="ground"></div>
+    </div>  
+    
+    <div class="buttonContainer" id="right">
+        <button id="up" 
+            ontouchstart="TouchControl.btnDown('ArrowUp', 'ArrowUp');"
+            ontouchend="TouchControl.btnUp('ArrowUp', 'ArrowUp');">
+        </button>
+
+        <button id="right" 
+            ontouchstart="TouchControl.btnDown('ArrowRight', 'ArrowRight');" 
+            ontouchend="TouchControl.btnUp('ArrowRight', 'ArrowRight');">
+        </button>
+    </div>    
+
+</div>
+    
+</body>
+</html>
+
